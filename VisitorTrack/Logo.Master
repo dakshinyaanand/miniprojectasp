@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Logo.master.cs" Inherits="VisitorTrack.Logo" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 580px;
+        }
+        .auto-style3 {
+            height: 36px;
+        }
+        .auto-style4 {
+            height: 121px;
+            text-align: center;
+        }
+        .auto-style5 {
+            font-size: x-large;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style2" rowspan="2">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/images/logo.png" Width="339px" Height="146px" />
+                </td>
+                <td class="auto-style4"><span class="auto-style5">Visitors Check-in and Check-out Application</span><br />
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">
+                    <asp:ImageButton ID="imgbtnhome" runat="server" CausesValidation="false" Height="36px" ImageUrl="~/homeimg.jpg" OnClick="ImageButton1_Click" Width="53px" />
+                </td>
+            </tr>
+        </table>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
